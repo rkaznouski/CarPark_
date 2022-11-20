@@ -2,7 +2,7 @@ package interfaces
 
 import orders.Order
 
-interface CargoPassenger: Vehicle, Passenger, Truck {
+interface CargoPassenger: Passenger, Truck {
 
     override fun isBusFounded(order: Order): Boolean {
         return if (

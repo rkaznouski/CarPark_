@@ -2,7 +2,6 @@ package vehicles
 
 import core.*
 import interfaces.Truck
-import interfaces.Vehicle
 import orders.TypeOfCargo
 import orders.TypeOfCargo.*
 
@@ -18,6 +17,6 @@ class Refrigerator(
     // Specific properties
     override var bodyCapacity: Float = REFRIGERATOR_MAX_VOLUME,
     override var loadCapacity: Float = REFRIGERATOR_MAX_TONS,
-    override val purpose: Set<TypeOfCargo> = setOf(PERISHABLES, INDUSTRIAL),
+    override val purpose: Set<TypeOfCargo> = setOf(PERISHABLES),
     override var isSealedBody: Boolean = false,
-): Vehicle, Truck
+): Truck

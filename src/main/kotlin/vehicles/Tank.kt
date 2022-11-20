@@ -2,7 +2,6 @@ package vehicles
 
 import core.*
 import interfaces.Truck
-import interfaces.Vehicle
 import orders.TypeOfCargo
 import orders.TypeOfCargo.*
 
@@ -20,4 +19,4 @@ class Tank(
     override var loadCapacity: Float = TANK_MAX_TONS,
     override val purpose: Set<TypeOfCargo> = setOf(LIQUID),
     override var isSealedBody: Boolean = false,
-): Vehicle, Truck
+): Truck

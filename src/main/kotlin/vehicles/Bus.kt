@@ -2,7 +2,6 @@ package vehicles
 
 import core.*
 import interfaces.Passenger
-import interfaces.Vehicle
 import orders.TypeOfCargo
 
 class Bus(
@@ -18,4 +17,4 @@ class Bus(
     override var seatingCapacity: Int = BUS_MIN_SEATING_CAPACITY,
     override val purpose: Set<TypeOfCargo> = setOf(TypeOfCargo.PASSENGERS),
     override var isDisinfected: Boolean = true
-): Vehicle, Passenger
+): Passenger
